@@ -68,7 +68,7 @@
     <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Item</th>
             <th scope="col">Name</th>
             <th scope="col">Created By</th>
             
@@ -78,7 +78,7 @@
           <tr>
             <th scope="row">1</th>
             <td>Test 1</td>
-            <td>Otto</td>
+            <td>Joe</td>
             
           </tr>
           <tr>
@@ -103,10 +103,10 @@ $(document).ready(function () {
 
 $('input[type=file]').change(function () {
     var val = $(this).val().toLowerCase();
-    var regex = new RegExp("(.*?)\.(docx|doc|pdf)$");
+    var regex = new RegExp("(.*?)\.(doc|docx|pdf)$");
     if (!(regex.test(val))) {
         $(this).val('');
-        alert('The uploaded file format should have the following extension: doc, docx or pdf');
+        alert('The uploaded file format should have the following extension: pdf, doc or docx');
     }
 });
 });
